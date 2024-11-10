@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dicee</title>
+    <title>Dice Game</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
   </head>
@@ -11,26 +11,30 @@
     <div class="container">
       <div class="dice">
         <p>PLAYER 1</p>
-        <img class="player1Dice" src="images/dice6.jpg" alt="Player 1 Dice">
+        <img id="player1Dice" class="diceImage" src="images/dice6.jpg" alt="Player 1 Dice">
+        <h4 class="game" style="color:blue;">
+          <button onclick="rollPlayer1()">Roll Dice (Player 1)</button>
+        </h4>
       </div>
 
       <div class="dice">
         <p>PLAYER 2</p>
-        <img class="player2Dice" src="images/dice6.jpg" alt="Player 2 Dice">
+        <img id="player2Dice" class="diceImage" src="images/dice6.jpg" alt="Player 2 Dice">
+        <h4 class="game" style="color:blue;">
+          <button onclick="rollPlayer2()">Roll Dice (Player 2)</button>
+        </h4>
       </div>
     </div>
-    <h4 class="game" style="color:blue;">
-      <button onclick="rollPlayer1()">Click me to play!</button>
-    </h4>
-    <h4 class="game" style="color:blue;">
-      <button onclick="rollPlayer2()">Click me to play!</button>
-    </h4>
-    <button onclick="determineWinner()">Determine Winner</button>
-    <script src="index.js" charset="utf-8"></script>
 
+    <div class="result">
+      <button onclick="determineWinner()">Determine Winner</button>
+      <p id="resultMessage"></p>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
   </body>
 
   <footer>
-    www 🎲 Dice Game 🎲 com
+    <p>www 🎲 Dice Game 🎲 com</p>
   </footer>
 </html>
