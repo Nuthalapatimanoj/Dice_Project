@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="h1">REFRESH ME</h1>
+    <div class="container">
+      <div class="dice">
+        <p>PLAYER 1</p>
+        <img class="player1Dice" src="images/dice6.jpg" alt="Player 1 Dice">
+      </div>
+
+      <div class="dice">
+        <p>PLAYER 2</p>
+        <img class="player2Dice" src="images/dice6.jpg" alt="Player 2 Dice">
+      </div>
+    </div>
+    <h4 class="game" style="color:blue;">
+      <button onclick="rollPlayer1()">Click me to play!</button>
+    </h4>
+    <h4 class="game" style="color:blue;">
+      <button onclick="rollPlayer2()">Click me to play!</button>
+    </h4>
+    <button onclick="determineWinner()">Determine Winner</button>
+    <script src="index.js" charset="utf-8"></script>
+
+  </body>
+
+  <footer>
+    www 🎲 Dice Game 🎲 com
+  </footer>
+</html>
